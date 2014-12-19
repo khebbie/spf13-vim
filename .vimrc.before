@@ -22,7 +22,7 @@
 " spf13 options {
 
     " Prevent automatically changing to open file directory
-    "   let g:spf13_no_autochdir = 1
+    let g:spf13_no_autochdir = 1
 
     " Disable views
     "   let g:spf13_no_views = 1
@@ -46,13 +46,13 @@
     " Disable neosnippet expansion
     " This maps over <C-k> and does some Supertab
     " emulation with snippets
-    "   let g:spf13_no_neosnippet_expand = 1
+       let g:spf13_no_neosnippet_expand = 1
 
     " Disable whitespace stripping
     "   let g:spf13_keep_trailing_whitespace = 1
 
     " Enable powerline symbols
-    "   let g:airline_powerline_fonts = 1
+       let g:airline_powerline_fonts = 1
 
     " vim files directory
     "   let g:spf13_consolidated_directory = <full path to desired directory>
@@ -80,7 +80,7 @@
     "   let g:spf13_no_big_font = 1
 
     " Disable  omni complete
-    "   let g:spf13_no_omni_complete = 1
+       let g:spf13_no_omni_complete = 1
 
     " Don't create default mappings for multicursors
     " See :help multiple-cursors-mappings

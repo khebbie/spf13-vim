@@ -36,7 +36,7 @@
         endif
     " }
 
-    " Windows Compatible {
+    5" Windows Compatible {
         " On Windows, also use '.vim' instead of 'vimfiles'; this makes synchronization
         " across (heterogeneous) systems easier.
         if WINDOWS()
@@ -50,7 +50,7 @@
     if filereadable(expand("~/.vimrc.before"))
         source ~/.vimrc.before
     endif
-" }
+" 
 
 " Use bundles config {
     if filereadable(expand("~/.vimrc.bundles"))
