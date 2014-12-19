@@ -108,9 +108,9 @@
             Bundle 'tpope/vim-surround'
             Bundle 'tpope/vim-repeat'
             Bundle 'spf13/vim-autoclose'
-            Bundle 'kien/ctrlp.vim'
+            Bundle 'ctrlpvim/ctrlp.vim'
             Bundle 'tacahiroy/ctrlp-funky'
-            Bundle 'terryma/vim-multiple-cursors'
+            Bundle 'kristijanhusak/vim-multiple-cursors'
             Bundle 'vim-scripts/sessionman.vim'
             Bundle 'matchit.zip'
             if (has("python") || has("python3")) && exists('g:spf13_use_powerline') && !exists('g:spf13_use_old_powerline')
@@ -201,7 +201,7 @@
         if count(g:spf13_bundle_groups, 'python')
             " Pick either python-mode or pyflakes & pydoc
             Bundle 'klen/python-mode'
-            Bundle 'python.vim'
+            Bundle 'yssource/python.vim'
             Bundle 'python_match.vim'
             Bundle 'pythoncomplete'
         endif
@@ -258,6 +258,12 @@
         endif
     " }
 
+    " Puppet {
+        if count(g:spf13_bundle_groups, 'puppet')
+            Bundle 'rodjek/vim-puppet'
+        endif
+    " }
+
     " Go Lang {
         if count(g:spf13_bundle_groups, 'go')
             "Bundle 'Blackrush/vim-gocode'
@@ -265,14 +271,23 @@
         endif
     " }
 
+    " Elixir {
+        if count(g:spf13_bundle_groups, 'elixir')
+            Bundle 'elixir-lang/vim-elixir'
+            Bundle 'carlosgaldino/elixir-snippets'
+            Bundle 'mattreduce/vim-mix'
+        endif
+    " }
+
     " Misc {
         if count(g:spf13_bundle_groups, 'misc')
+            Bundle 'wting/rust.vim'
             Bundle 'tpope/vim-markdown'
             Bundle 'spf13/vim-preview'
             Bundle 'tpope/vim-cucumber'
             Bundle 'cespare/vim-toml'
             Bundle 'quentindecock/vim-cucumber-align-pipes'
-            Bundle 'Puppet-Syntax-Highlighting'
+            Bundle 'saltstack/salt-vim'
         endif
     " }
 
